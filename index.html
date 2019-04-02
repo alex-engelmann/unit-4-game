@@ -9,6 +9,10 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
     <title>Crystal Game</title>
 </head>
 
@@ -21,7 +25,10 @@
                 <br>
                 <h1>The Crystal Collector</h1>
                 <br>
-                <h3>Desired Total</h3>
+                <div class="row">
+                    <h3>Desired Total:</h3>
+                    <div class="boxed">15</div>
+                </div>
                 <br>
                 <h3>Collect these Crystals Until You Reach The Total:</h3>
                 <div class="row">
@@ -36,16 +43,25 @@
 
                 </div>
                 <br>
-                <h3>Current Total:</h3>
+                <div class="row">
+                    <h3>Current Total:</h3>
+                    <div class="boxed">100</div>
 
-                <h3>Wins:</h3>
-                <h3>Losses:</h3>
+                    <h3>Wins:</h3>
+                    <div class="boxed">15</div>
+                    <h3>Losses:</h3>
+                    <div class="boxed">15</div>
+                </div>
             </div>
 
             <div class="col-lg-2"></div>
         </div>
     </div>
-    <div class="footer">Copyright</div>
+    <div class="footer">
+        <br>
+        Copyright
+
+    </div>
     <script src="./assets/javascript/game.js"></script>
 
 </body>
