@@ -7,7 +7,8 @@ $(document).ready(function () {
   function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+    return Math.floor(Math.random() * (max - min)) + min; 
+    //The maximum is exclusive and the minimum is inclusive
   }
 
 
@@ -58,8 +59,8 @@ $(document).ready(function () {
 
   $(".crystal").on("click", function () {
     runningTotal += parseInt($(this).val());  //parseInt prevents concatenation
-    console.log(runningTotal);
-
+    $("#current-total").text(runningTotal); 
+    
     if (runningTotal > grandTotal) {
       losses++;
       alert("You lost!");
@@ -70,10 +71,9 @@ $(document).ready(function () {
       alert("You won!");
       restartGame();
     }
-    else { $("#current-total").text(runningTotal); }
 
-
-    //log all values to console for debugging
+    //log all values to console for debugging, can comment later
+    console.log("Running total: " + runningTotal);
     console.log("Target total: " + grandTotal);
     console.log("Yellow: " + yellowCrystal);
     console.log("Green: " + greenCrystal);
