@@ -1,0 +1,19 @@
+body {
+    font-family: 'Berkshire Swash', cursive;
+    background-image: url(../images/morocco-blue.png);
+}
+
+#center-bar {
+    background-color: bisque;
+}
+
+.rounded {
+    /* width: 200px; */
+    /* margin-left: auto; */
+    /* height: 200px; */
+    margin: 10px 10px 10px 10px;
+}
+
+h1, .footer {
+    text-align: center;
+}
